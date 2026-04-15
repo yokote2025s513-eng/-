@@ -15,7 +15,9 @@ def index():
         months = year * 12
         r = rate / 12
 
-        total = 0
+        initial = float(request.form["initial"])
+
+        total = initial
         for i in range(months):
             total = total * (1 + r) + (a + d * i)
 
