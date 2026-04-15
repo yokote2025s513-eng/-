@@ -16,6 +16,9 @@
 
     {% if result %}
         <h2>結果: ￥{{ "{:,.0f}".format(result) }}</h2>
+
+        <button onclick="location.reload()">リロード</button>
+
     {% endif %}
 </body>
 </html>
