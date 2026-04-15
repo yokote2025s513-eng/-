@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>投資シミュレーション</title>
+</head>
+<body>
+    <h1>積立シミュレーション</h1>
+
+    <form method="post">
+        年数: <input type="number" name="year"><br>
+        初期掛け金: <input type="number" name="a"><br>
+        毎月の増加額: <input type="number" name="d"><br>
+        年利: <input type="number" step="0.01" name="rate"><br>
+        <button type="submit">計算</button>
+    </form>
+
+    {% if result %}
+        <h2>結果: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
